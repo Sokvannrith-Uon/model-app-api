@@ -11,5 +11,6 @@ class ApiRoute extends Route {
     super.register();
     Router.get("/home", homeController.index);
     Router.get("/products", productController.getProducts);
+    Router.get("/products/{id}", productController.getProductById);
   }
 }
